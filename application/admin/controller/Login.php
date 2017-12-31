@@ -7,6 +7,7 @@ class Login extends Controller
 {
     public function index()
     {
+//        phpinfo();
         return $this->fetch();
     }
 
