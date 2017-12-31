@@ -9,7 +9,7 @@ class Index extends Base
     {
 //        halt(session(config('admin.session_user'), '', config('admin.session_user_scope')));
         return $this->fetch();
-//        4.1
+//        4.2
     }
 
     public function welcome()

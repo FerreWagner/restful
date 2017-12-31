@@ -6,5 +6,5 @@
  * Time: 19:32
  */
 return [
-    'password_pre_halt' => 'alexa', //密码加密盐
+    'password_pre_halt' => 'alexa', //salt
 ];
