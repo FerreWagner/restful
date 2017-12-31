@@ -61,4 +61,14 @@ class Login extends Controller
         }
     }
 
+    /**
+     * logout
+     */
+    public function logout()
+    {
+        session(null, config('admin.session_user_scope'));
+        //redirect
+        $this->redirect('login/index');
+    }
+
 }
