@@ -4,11 +4,22 @@ namespace app\admin\controller;
 use app\common\lib\IAuth;
 use think\Controller;
 
-class Login extends Controller
+class Login extends Base
 {
+    public function _initialize()
+    {
+        //Rewrite ini function
+    }
+
     public function index()
     {
-        return $this->fetch();
+        //login validate
+        $login = $this->isLogin();
+        if ($login){
+            return $this->redirect('index/index');
+        }else{
+            return $this->fetch();
+        }
     }
 
     public function check()
