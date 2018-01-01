@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace app\admin\controller;
 
 use think\Controller;
@@ -26,7 +26,7 @@ class News extends Base
         if(!empty($data['title'])) {
             $whereData['title'] = ['like', '%'.$data['title'].'%'];
         }
-        // 获取数据 然后数据 填充到模板
+        // 获取数据
 
         // 模式一
         ///$news = model('News')->getNews();
