@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace app\admin\controller;
 
 use think\Controller;
@@ -56,7 +56,6 @@ class News extends Base
     }
 
     public function add() {
-
         if(request()->isPost()) {
 
             $data = input('post.');
