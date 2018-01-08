@@ -1,6 +1,7 @@
+<!--header-->
 {include file="public/_meta" /}
 <article class="page-container">
-  <form class="form form-horizontal" id="form-singwaapp" url="{:url('news/add')}" method="post">
+  <form class="form form-horizontal" id="form-singwaapp" url="{:url('news/add')}">
     <div class="row cl">
       <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>文章标题：</label>
       <div class="formControls col-xs-8 col-sm-9">
@@ -17,12 +18,9 @@
       <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类栏目：</label>
       <div class="formControls col-xs-8 col-sm-9"> <span class="select-box">
 				<select name="catid" class="select">
-                  <option value="2">123</option>
-                 <!--
-                {//volist name="cats" id="vo"}
-                 <option value="{//$key}">{//$vo}</option>
-                {///volist}
-                 -->
+                 {volist name="cats" id="vo"}
+                  <option value="{$key}">{$vo}</option>
+                  {/volist}
 
                 </select>
 				</span> </div>
@@ -93,7 +91,6 @@
           {include file="public/_footer" /}
 
           <!--请在下方写此页面业务相关的脚本-->
-          <script type="text/javascript" src="__STATIC__/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
         <script type="text/javascript" src="__STATIC__/lib/jquery.validation/1.14.0/validate-methods.js"></script>
         <script type="text/javascript" src="__STATIC__/lib/jquery.validation/1.14.0/messages_zh.js"></script>
         <script type="text/javascript" src="__STATIC__/lib/ueditor/1.4.3/ueditor.config.js"></script>
