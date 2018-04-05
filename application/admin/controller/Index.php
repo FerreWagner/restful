@@ -3,19 +3,16 @@ namespace app\admin\controller;
 
 use think\Controller;
 
-class Index extends Base
+class Index extends Controller
 {
     public function index()
     {
-//        halt(session(config('admin.session_user'), '', config('admin.session_user_scope')));
         return $this->fetch();
-//        4.5
+//        3.1
     }
 
     public function welcome()
     {
 
     }
-
-
 }
