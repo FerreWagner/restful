@@ -3,7 +3,7 @@ namespace app\admin\controller;
 
 use app\common\lib\Upload;
 /**
- * 后台图片上传逻辑
+ * QINIU 后台图片上传逻辑
  * Class Image
  * @package app\admin\controller
  */
